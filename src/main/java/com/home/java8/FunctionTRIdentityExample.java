@@ -6,7 +6,7 @@ import java.util.function.Function;
 
 public class FunctionTRIdentityExample{
 	  public static void main(String args[]){
-	    Function<Employee, String> funcEmpToString= (Employee e)-> {return e.getName();};
+	   // Function<Employee, String> funcEmpToString= (Employee e)-> {return e.getName();};
 	    List<Employee> employeeList=
 	     Arrays.asList(new Employee("Tom Jones", 45), 
 	      new Employee("Harry Major", 25),
