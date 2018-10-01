@@ -51,6 +51,7 @@ class DiscountService {
 // VVVVVVVVV ==== supporting (dummy) code ==== VVVVVVVVV
 class Customer {
 	private MemberCard memberCard;
+	
 	public Customer() {
 	}
 	public Customer(MemberCard profile) {
@@ -63,5 +64,14 @@ class Customer {
 
 @Data
 class MemberCard {
-	private final int fidelityPoints;
+	private final int fidelityPoints=0;
+	
+	public MemberCard(int i) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public int getFidelityPoints() {
+		return fidelityPoints;
+	}
+	
 }

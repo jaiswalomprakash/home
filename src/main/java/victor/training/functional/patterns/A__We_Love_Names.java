@@ -1,5 +1,5 @@
 package victor.training.functional.patterns;
-
+//https://dzone.com/articles/functional-programming-patterns-with-java-8
 import static java.util.stream.Collectors.toList;
 
 import java.time.LocalDate;
@@ -57,6 +57,32 @@ class User {
 	private String lastName;
 	private String username;
 	private LocalDate deactivationDate;
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public LocalDate getDeactivationDate() {
+		return deactivationDate;
+	}
+	public void setDeactivationDate(LocalDate deactivationDate) {
+		this.deactivationDate = deactivationDate;
+	}
+	
+	
 }
 
 @Data
@@ -64,4 +90,23 @@ class UserDto {
 	private String fullName;
 	private String username;
 	private boolean active;
+	public String getFullName() {
+		return fullName;
+	}
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public boolean isActive() {
+		return active;
+	}
+	public void setActive(boolean active) {
+		this.active = active;
+	}
+	
 }

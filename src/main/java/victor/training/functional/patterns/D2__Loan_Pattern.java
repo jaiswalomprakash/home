@@ -38,7 +38,7 @@ class FileExporter {
 			return file;
 		} catch (Exception e) {
 			// TODO send email notification
-			log.debug("Gotcha!", e); // TERROR-Driven Development
+			//log.debug("Gotcha!", e); // TERROR-Driven Development
 			throw e;
 		}
 	}
