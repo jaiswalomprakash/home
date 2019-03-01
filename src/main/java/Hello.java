@@ -7,6 +7,11 @@ class Hello
    public static void main(String[] args)
    {
 	
+	   String a = "tst";
+	   String b = a;
+	   a ="om";
+	   System.out.println("Hello.main()--a "+a+ " =b "+b );
+	   
       String hello = "Hello", lo = "lo";
       String s = new String("Hello");
     

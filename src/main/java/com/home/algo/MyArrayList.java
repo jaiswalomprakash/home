@@ -63,7 +63,7 @@ public class MyArrayList<E> {
 	
 	public static void main(String[] args) {
 		
-		MyArrayList list = new MyArrayList();
+		MyArrayList<Integer> list = new MyArrayList();
 		list.add(3);
 		list.add(4);
 		list.add(5);
