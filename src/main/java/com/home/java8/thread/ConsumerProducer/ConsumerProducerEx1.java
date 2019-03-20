@@ -15,7 +15,7 @@ public class ConsumerProducerEx1 {
 	public void Produce() throws InterruptedException{
 		int value =0;
 		while(true){
-		 synchronized(this){	
+		 synchronized(list){	
 			 if(list.size()==intialCapacity){ 
 				 list.wait();
 			 }else{
@@ -32,7 +32,7 @@ public class ConsumerProducerEx1 {
 	
 	public void Consume() throws InterruptedException {		
 		while(true){			
-			synchronized(this) {
+			synchronized(list) {
 				if(list.size()==0){
 					list.wait();			
 					
@@ -40,6 +40,7 @@ public class ConsumerProducerEx1 {
 				}else{
 					int val = list.removeFirst();
 					System.out.println("ConsumerProducerEx1.Consume()--"+val);
+					 list.notify();
 				}
 				Thread.sleep(1000);
 			}

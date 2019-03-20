@@ -38,12 +38,6 @@ public class StaticMethod {
 		
 		BiPredicate<List<Integer>, Integer> checkContainsRef = List :: contains;
 		System.out.println("----through method reference ---"+checkContainsRef.test(numberList, 2));
-		
-		
-		
-		
-		
-		
-	}
+	}	
 
 }
